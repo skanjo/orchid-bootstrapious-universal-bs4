@@ -1,9 +1,10 @@
-# WebStorm
+# Intellij
 .idea/
 
 # Gradle
 .gradle/
 build/
+out/
 
 # MacOS
 .DS_Store

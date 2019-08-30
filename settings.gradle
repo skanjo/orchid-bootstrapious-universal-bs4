@@ -1,1 +1,4 @@
 rootProject.name = 'orchid-bootstrapious-universal-bs4'
+
+include 'theme'
+include 'site'
