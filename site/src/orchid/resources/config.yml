@@ -1,0 +1,21 @@
+site:
+  about:
+    siteName: 'Universal - All In 1 Template'
+
+# Whenever you see a warning like:
+#
+#     [WARN] Warnings:
+#     [WARN] AssetHolderDelegate:
+#     [WARN]     - assets/js/vendor/owl.carousel/assets/owl.carousel.css is not a valid CSS asset, perhaps you are missing a carousel->css Compiler extension?
+#
+# Just add the `carousel` part to the list below
+services:
+  compilers:
+    ignoredOutputExtensions:
+      - 'min'
+      - 'bundle'
+      - 'carousel'
+      - 'theme'
+      - 'default'
+      - 'cookie'
+      - '3'
