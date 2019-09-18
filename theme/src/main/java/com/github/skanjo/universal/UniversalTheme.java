@@ -1,15 +1,45 @@
 package com.github.skanjo.universal;
 
 import com.eden.orchid.api.OrchidContext;
+import com.eden.orchid.api.options.annotations.Description;
+import com.eden.orchid.api.options.annotations.Option;
+import com.eden.orchid.api.options.annotations.StringDefault;
 import com.eden.orchid.api.theme.Theme;
 
 import javax.inject.Inject;
 
 public class UniversalTheme extends Theme {
 
+    @Option
+    @StringDefault("assets/media/boxed-pattern.png")
+    @Description("Textured pentagon background image.")
+    private String boxedBackground;
+
+    @Option
+    @StringDefault("assets/media/texture-bw.png")
+    @Description("Textured pentagon background image.")
+    private String pentagonBackground;
+
+
     @Inject
     public UniversalTheme(OrchidContext context) {
         super(context, "Universal", 100);
+    }
+
+    public String getBoxedBackground() {
+        return boxedBackground;
+    }
+
+    public void setBoxedBackground(String boxedBackground) {
+        this.boxedBackground = boxedBackground;
+    }
+
+    public String getPentagonBackground() {
+        return pentagonBackground;
+    }
+
+    public void setPentagonBackground(String pentagonBackground) {
+        this.pentagonBackground = pentagonBackground;
     }
 
     @Override

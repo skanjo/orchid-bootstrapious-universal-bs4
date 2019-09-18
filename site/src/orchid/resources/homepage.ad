@@ -124,7 +124,7 @@ layout: index
 
     <!-- START TESTIMONIALS -->
       <!-- Need to figure out how to get this background image from the theme, setting via style for now -->
-      <section class="bar background-pentagon no-mb text-md-center" style="background: url('assets/media/img/texture-bw.png')">
+      <section class="bar background-pentagon no-mb text-md-center">
         <div class="container">
           <div class="heading text-center">
             <h2>Testimonials</h2>
